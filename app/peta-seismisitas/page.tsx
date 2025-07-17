@@ -22,6 +22,12 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Peta Seismisitas Sumatera Utara - BARGEMCU",
+    description: "Peta seismisitas Provinsi Sumatera Utara tahun 2000-2025 yang menampilkan aktivitas gempa bumi di wilayah Sumatera Utara dan sekitarnya.",
+    images: ["/og-image.png"],
+  },
 }
 
 export default function PetaSeismisitasPage() {

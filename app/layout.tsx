@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg", // Gambar untuk preview di sosial media (perlu dibuat)
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "BARGEMCU - Barcode Gempa dan Cuaca Kelurahan Beringin",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BARGEMCU - Barcode Gempa dan Cuaca Kelurahan Beringin",
     description: "Portal informasi gempa dan cuaca terkini untuk Kelurahan Beringin, Kecamatan Medan Selayang.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -76,6 +76,20 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Meta tags untuk OG Image */}
+        <meta property="og:image" content="https://bargemcu.netlify.app/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="BARGEMCU - Barcode Gempa dan Cuaca Kelurahan Beringin" />
+        <meta property="og:image:type" content="image/png" />
+        
+        {/* Meta tags untuk WhatsApp */}
+        <meta property="og:image" content="https://bargemcu.netlify.app/og-image.png" />
+        <meta property="og:image:secure_url" content="https://bargemcu.netlify.app/og-image.png" />
+        
+        {/* Meta tags untuk Twitter */}
+        <meta name="twitter:image" content="https://bargemcu.netlify.app/og-image.png" />
         
         {/* Structured Data (JSON-LD) untuk SEO */}
         <Script
@@ -114,7 +128,7 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "BARGEMCU",
               "url": "https://bargemcu.netlify.app/",
-              "logo": "https://bargemcu.netlify.app/og-image.jpg",
+              "logo": "https://bargemcu.netlify.app/og-image.png",
               "sameAs": [
                 "https://www.instagram.com/kknstmkg.unit1/",
                 "https://www.instagram.com/kelurahan_beringin/"

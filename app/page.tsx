@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ExternalLink, Cloud, Activity, Map, Building2, GraduationCap, Facebook, Share2, Linkedin, Copy } from "lucide-react"
+import { ExternalLink, Cloud, Activity, Map, Building2, GraduationCap, AlertCircle,Facebook, Share2, Linkedin, Copy } from "lucide-react"
 import { useState } from "react";
 
 export default function HomePage() {
@@ -13,8 +13,7 @@ export default function HomePage() {
     url: "https://bargemcu.netlify.app", // URL yang baru
     title: "BARGEMCU - Barcode Gempa dan Cuaca Kelurahan Beringin",
     text: "Akses informasi gempa dan cuaca terbaru untuk Kelurahan Beringin, Medan Selayang melalui aplikasi BARGEMCU. Kunjungi sekarang!",
-    hashtags: "BARGEMCU,BMKG,STMKG,MedanSelayang,KelurahBeringin,KKN",
-    ogImage: "/og-image.png"
+    hashtags: "BARGEMCU,BMKG,STMKG,MedanSelayang,KelurahBeringin,KKN"
   };
 
   // Fungsi untuk membuat URL share
@@ -53,20 +52,20 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
-        {/* Header dengan Logo */}
-        <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-5 mb-8">
+        {/* Header dengan Logo - Diubah untuk responsif dalam 1 baris */}
+        <div className="flex justify-center items-center mb-8 overflow-x-auto whitespace-nowrap py-2 px-1 w-full">
           {/* Logo BMKG */}
           <a 
             href="https://bmkg.go.id" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 transition-transform hover:scale-110"
+            className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-1 sm:mx-2 transition-transform hover:scale-110"
           >
             <Image
               src="/Logo-BMKG.png"
               alt="Logo BMKG"
-              width={64}
-              height={64}
+              width={56}
+              height={56}
               className="object-contain w-full h-full"
             />
           </a>
@@ -76,13 +75,13 @@ export default function HomePage() {
             href="https://stmkg.ac.id" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 transition-transform hover:scale-110"
+            className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-1 sm:mx-2 transition-transform hover:scale-110"
           >
             <Image
               src="/Logo-STMKG.png"
               alt="Logo STMKG"
-              width={64}
-              height={64}
+              width={56}
+              height={56}
               className="object-contain w-full h-full"
             />
           </a>
@@ -92,13 +91,13 @@ export default function HomePage() {
             href="https://portal.medan.go.id/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 transition-transform hover:scale-110"
+            className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-1 sm:mx-2 transition-transform hover:scale-110"
           >
             <Image
               src="/Logo-Kota-Medan.png"
               alt="Logo Kota Medan"
-              width={64}
-              height={64}
+              width={56}
+              height={56}
               className="object-contain w-full h-full"
             />
           </a>
@@ -108,9 +107,9 @@ export default function HomePage() {
             href="https://www.instagram.com/kelurahan_beringin/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-auto px-2 transition-transform hover:scale-110"
+            className="flex-shrink-0 mx-1 sm:mx-2 px-1 transition-transform hover:scale-110"
           >
-            <p className="text-black text-base sm:text-lg md:text-xl font-semibold text-left leading-tight">
+            <p className="text-black text-xs sm:text-sm md:text-base font-semibold text-center leading-tight">
               Kelurahan<br />Beringin
             </p>
           </a>
@@ -120,13 +119,13 @@ export default function HomePage() {
             href="https://www.instagram.com/kknstmkg.unit1/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 transition-transform hover:scale-110"
+            className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-1 sm:mx-2 transition-transform hover:scale-110"
           >
             <Image
               src="/Logo-KKN.png"
               alt="Logo KKN"
-              width={72}
-              height={72}
+              width={56}
+              height={56}
               className="object-contain w-full h-full"
             />
           </a>
@@ -136,13 +135,13 @@ export default function HomePage() {
             href="https://www.instagram.com/pddikti/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 transition-transform hover:scale-110"
+            className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 mx-1 sm:mx-2 transition-transform hover:scale-110"
           >
             <Image
               src="/Logo-Dikti.png"
               alt="Logo Dikti"
-              width={72}
-              height={72}
+              width={56}
+              height={56}
               className="object-contain w-full h-full"
             />
           </a>
@@ -193,7 +192,7 @@ export default function HomePage() {
             className="flex items-center justify-between p-4 md:p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 border border-blue-100"
           >
             <div className="flex items-center gap-3">
-              <ExternalLink className="w-6 h-6 text-green-600" />
+              <AlertCircle className="w-6 h-6 text-yellow-600" />
               <span className="text-gray-800 font-medium">WRS BMKG</span>
             </div>
             <ExternalLink className="w-4 h-4 text-gray-400" />
