@@ -118,12 +118,3 @@ Hak Cipta © 2025 KKN STMKG Unit 1. Semua hak dilindungi.
 Untuk pertanyaan dan informasi lebih lanjut, silakan hubungi melalui:
 
 - Instagram: [@kknstmkg.unit1](https://www.instagram.com/kknstmkg.unit1/)
-
----
-
-<p align="center">
-  <img src="public/Logo-BMKG.png" alt="Logo BMKG" width="80" style="margin: 0 20px;">
-  <img src="public/Logo-STMKG.png" alt="Logo STMKG" width="80" style="margin: 0 20px;">
-  <img src="public/Logo-Kota-Medan.png" alt="Logo Kota Medan" width="80" style="margin: 0 20px;">
-  <img src="public/Logo-KKN.png" alt="Logo KKN" width="80" style="margin: 0 20px;">
-</p>
